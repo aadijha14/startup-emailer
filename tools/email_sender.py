@@ -1,4 +1,4 @@
-from adk.tools import tool
+from google.adk.tools import tool
 import os
 
 OUTPUT_DIR = "sent_emails"
