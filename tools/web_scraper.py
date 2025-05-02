@@ -1,8 +1,7 @@
-from google.adk.tools import tool
+from google.adk.tools import FunctionTool
 import requests
 from bs4 import BeautifulSoup
 
-@tool
 def scrape_website(url: str) -> dict:
     """
     Scrapes the given URL and returns extracted metadata.
@@ -27,3 +26,5 @@ def scrape_website(url: str) -> dict:
 
     except Exception as e:
         return {"error": str(e)}
+
+scrape_website_tool = FunctionTool(func=scrape_website)

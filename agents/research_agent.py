@@ -1,5 +1,5 @@
 from google.adk.agents import LlmAgent
-from tools.web_scraper import scrape_website
+from tools.web_scraper import scrape_website_tool
 
 research_agent = LlmAgent(
     name="research_agent",
@@ -12,5 +12,5 @@ research_agent = LlmAgent(
     - Any pain points or opportunities your startup could address
     """,
     description="Agent that analyzes websites and produces summarized company info.",
-    tools=[scrape_website],
+    tools=[scrape_website_tool],
 )
