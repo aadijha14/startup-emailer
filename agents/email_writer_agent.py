@@ -1,4 +1,5 @@
 from google.adk.agents import LlmAgent
+from tools.email_sender import send_email_tool
 
 email_writer_agent = LlmAgent(
     name="email_writer_agent",
@@ -15,4 +16,5 @@ email_writer_agent = LlmAgent(
     Be concise, professional, and not too salesy.
     """,
     description="Generates personalized cold emails using startup value prop and lead info.",
+    tools=[send_email_tool],
 )
