@@ -10,5 +10,5 @@ lead_pipeline = LoopAgent(
         research_agent,
         email_writer_agent  # This agent now internally handles writing the email to file
     ],
-    max_iterations=10
+    max_iterations=50
 )

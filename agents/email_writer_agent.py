@@ -3,7 +3,7 @@ from tools.email_sender import send_email_tool
 
 email_writer_agent = LlmAgent(
     name="email_writer_agent",
-    model="litellm/gemini-2.0-flash",
+    model="gemini-2.0-flash",
     instruction="""
     Based on the company information and our startup's offering, write a personalized cold outreach email.
     
